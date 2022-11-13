@@ -1,5 +1,3 @@
-#  Hi,We are free ,please avoid fraud.
-#  【晴园宝藏库】 TG@qy_520
 port: 7890
 socks-port: 7891
 allow-lan: true
@@ -7407,6 +7405,7 @@ proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
+      - 💗 心选节点
       - 🇰🇷 韩国均衡-轮询
       - 🇰🇷 韩国均衡-散列
       - 🇺🇸 美国均衡-散列
@@ -9002,6 +9001,24 @@ proxy-groups:
       - "| 中国 | 晴园 | 686"
       - "| 中国 | 晴园 | 1247"
       - "| 中国 | 晴园 | 1316"
+  - name: 💗 心选节点
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 200
+    tolerance: 90
+    proxies:
+      - 🇰🇷 韩国均衡-轮询
+      - 🇰🇷 韩国均衡-散列
+      - 🇺🇸 美国均衡-散列
+      - 🇺🇸 美国均衡-轮询
+      - 🇯🇵 日本均衡-轮询
+      - 🇯🇵 日本均衡-散列
+      - 🇹🇼 台湾均衡-轮询
+      - 🇹🇼 台湾均衡-散列
+      - 🇭🇰 香港均衡-轮询
+      - 🇭🇰 香港均衡-散列
+      - 🇸🇬 狮城均衡-轮询
+      - 🇸🇬 狮城均衡-散列
   - name: 🎥 NETFLIX
     type: select
     proxies:
@@ -24687,4 +24704,3 @@ rules:
   - MATCH,🐟 漏网之鱼
 proxy-providers: {}
 rule-providers: {}
-
